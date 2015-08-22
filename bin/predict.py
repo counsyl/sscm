@@ -8,8 +8,8 @@ import sys
 from argparse import ArgumentParser
 from scipy.misc import logsumexp
 
-from openmic.em import load_model
-from openmic.feature import Features
+from sscm.em import load_model
+from sscm.feature import Features
 
 def main(args):
     feature_map = Features.load(args.feature_file, args.models_dir)

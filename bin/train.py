@@ -9,9 +9,9 @@ import signal
 import argparse
 import shutil
 
-from openmic.feature import Features
-from openmic.model import IndependentGenerativeModel
-from openmic.em import load_model, save_model
+from sscm.feature import Features
+from sscm.model import IndependentGenerativeModel
+from sscm.em import load_model, save_model
 
 
 def train_model(name, features, train, feature_file,
