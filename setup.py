@@ -12,10 +12,6 @@ def main():
         author='Sharad Vikram, Matt Rasmussen',
         author_email='rasmus@counsyl.com',
         packages=['sscm'],
-        include_package_data=True,
-        package_data={
-            '': ['sscm/data/*'],
-        },
         scripts=[
             'bin/predict.py',
             'bin/track.py',
