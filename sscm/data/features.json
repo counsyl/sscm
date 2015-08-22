@@ -1,0 +1,317 @@
+{
+    "features": {
+        "test": {
+            "model_name": "encode",
+            "type": "float",
+            "distribution": "Gaussian",
+            "feature": "model",
+            "preprocess": "log",
+            "source_cluster": 1
+        },
+        "verPhCons": {
+            "column": "verPhCons",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "mamPhyloP": {
+            "column": "mamPhyloP",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "SIFTval": {
+            "column": "SIFTval",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "bStatistic": {
+            "column": "bStatistic",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "priPhyloP": {
+            "column": "priPhyloP",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "Consequence": {
+            "column": "Consequence",
+            "info": {
+                "categories": [
+                    "3PRIME_UTR",
+                    "5PRIME_UTR",
+                    "DOWNSTREAM",
+                    "INTERGENIC",
+                    "INTRONIC",
+                    "NON_SYNONYMOUS",
+                    "SYNONYMOUS",
+                    "REGULATORY",
+                    "STOP_GAINED",
+                    "STOP_LOST",
+                    "SPLICE_SITE",
+                    "CANONICAL_SPLICE",
+                    "UPSTREAM",
+                    "NONCODING_CHANGE",
+                    "UNKNOWN"
+                ]
+            },
+            "distribution": "Multinomial",
+            "type": "string",
+            "feature": "scalar"
+        },
+        "hsf": {
+            "column": "hsf",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "max_ent": {
+            "column": "max_ent",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "nnsplice": {
+            "column": "nnsplice",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "encode": {
+            "columns": ["EncH3K27Ac", "EncH3K4Me1", "EncH3K4Me3"],
+            "distribution": "MultivariateGaussian",
+            "type": "float",
+            "feature": "vector"
+        },
+        "EncExp": {
+            "column": "EncExp",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncH3K27Ac": {
+            "column": "EncH3K27Ac",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar",
+            "preprocess": "log"
+        },
+        "EncH3K4Me1": {
+            "column": "EncH3K4Me1",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar",
+            "preprocess": "log"
+        },
+        "EncH3K4Me3": {
+            "column": "EncH3K4Me3",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar",
+            "preprocess": "log"
+        },
+        "EncOCCombPVal": {
+            "column": "EncOCCombPVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncOCDNasePVal": {
+            "column": "EncOCDNasePVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncOCFairePVal": {
+            "column": "EncOCFairePVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncOCpolIIPVal": {
+            "column": "EncOCpolIIPVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncOCctcfPVal": {
+            "column": "EncOCctcfPVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "EncOCmycPVal": {
+            "column": "EncOCmycPVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "hsf": {
+            "column": "hsf",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "verPhyloP": {
+            "column": "verPhyloP",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "multi": {
+            "distribution": "MultivariateGaussian",
+            "type": "float",
+            "feature": "vector",
+            "columns": [
+                "verPhyloP",
+                "SIFTval",
+                "PolyPhenVal",
+                "GerpS",
+                "verPhCons",
+                "hsf",
+                "nnsplice",
+                "max_ent"
+            ],
+            "preprocess": [
+                "identity",
+                "logit",
+                "logit",
+                "identity",
+                "logit",
+                "identity",
+                "identity",
+                "identity"
+            ]
+        },
+        "priPhCons": {
+            "column": "priPhCons",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "mamPhCons": {
+            "column": "mamPhCons",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "nnsplice": {
+            "column": "hsf",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "GerpS": {
+            "column": "GerpS",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        },
+        "PolyPhenVal": {
+            "column": "PolyPhenVal",
+            "distribution": "Gaussian",
+            "type": "float",
+            "feature": "scalar"
+        }
+    },
+    "columns": [
+        "Chrom",
+        "Pos",
+        "Ref",
+        "Anc",
+        "Alt",
+        "Type",
+        "Length",
+        "isTv",
+        "isDerived",
+        "AnnoType",
+        "Consequence",
+        "ConsScore",
+        "ConsDetail",
+        "GC",
+        "CpG",
+        "mapAbility20bp",
+        "mapAbility35bp",
+        "scoreSegDup",
+        "priPhCons",
+        "mamPhCons",
+        "verPhCons",
+        "priPhyloP",
+        "mamPhyloP",
+        "verPhyloP",
+        "GerpN",
+        "GerpS",
+        "GerpRS",
+        "GerpRSpval",
+        "bStatistic",
+        "EncExp",
+        "EncH3K27Ac",
+        "EncH3K4Me1",
+        "EncH3K4Me3",
+        "EncNucleo",
+        "EncOCC",
+        "EncOCCombPVal",
+        "EncOCDNasePVal",
+        "EncOCFairePVal",
+        "EncOCpolIIPVal",
+        "EncOCctcfPVal",
+        "EncOCmycPVal",
+        "EncOCDNaseSig",
+        "EncOCFaireSig",
+        "EncOCpolIISig",
+        "EncOCctcfSig",
+        "EncOCmycSig",
+        "Segway",
+        "tOverlapMotifs",
+        "motifDist",
+        "motifECount",
+        "motifEName",
+        "motifEHIPos",
+        "motifEScoreChng",
+        "TFBS",
+        "TFBSPeaks",
+        "TFBSPeaksMax",
+        "isKnownVariant",
+        "ESP_AF",
+        "ESP_AFR",
+        "ESP_EUR",
+        "TG_AF",
+        "TG_ASN",
+        "TG_AMR",
+        "TG_AFR",
+        "TG_EUR",
+        "minDistTSS",
+        "minDistTSE",
+        "GeneID",
+        "FeatureID",
+        "CCDS",
+        "GeneName",
+        "cDNApos",
+        "relcDNApos",
+        "CDSpos",
+        "relCDSpos",
+        "protPos",
+        "relProtPos",
+        "Dst2Splice",
+        "Dst2SplType",
+        "Exon",
+        "Intron",
+        "oAA",
+        "nAA",
+        "Grantham",
+        "PolyPhenCat",
+        "PolyPhenVal",
+        "SIFTcat",
+        "SIFTval",
+        "RawScore",
+        "PHRED",
+        "hsf",
+        "nnsplice",
+        "max_ent",
+        "argweaver"
+    ]
+}

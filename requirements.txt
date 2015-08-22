@@ -1,0 +1,6 @@
+argparse==1.2.1
+numpy==1.9.0
+progressbar==2.2
+pytabix==0.1
+scipy==0.14.0
+wsgiref==0.1.2
