@@ -91,7 +91,7 @@ An example `features.json` would look like this:
 ```
 Every name in the `column` and `columns` property of each feature needs to correspond to name in the global `columns` attribute.
 
-For a full blown `features.json` look at the `features.json` in the root directory of this repo.
+For a full blown `features.json` look at `sscm/data/features.json`.
 
 Training
 ----------------------------
