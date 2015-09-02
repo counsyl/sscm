@@ -1,13 +1,5 @@
 {
     "features": {
-        "test": {
-            "model_name": "encode",
-            "type": "float",
-            "distribution": "Gaussian",
-            "feature": "model",
-            "preprocess": "log",
-            "source_cluster": 1
-        },
         "verPhCons": {
             "column": "verPhCons",
             "distribution": "Gaussian",

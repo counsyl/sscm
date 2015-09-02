@@ -7,15 +7,15 @@ def main():
     setup(
         name='sscm',
         version='1.0',
-        description=('Semi-Surpervised Clustering Method for variant '
+        description=('Semi-Supervised Clustering Method for variant '
                      'pathogenicity prediction'),
         author='Sharad Vikram, Matt Rasmussen',
         author_email='rasmus@counsyl.com',
         packages=['sscm'],
         scripts=[
-            'bin/predict.py',
-            'bin/track.py',
-            'bin/train.py',
+            'bin/sscm-predict',
+            'bin/sscm-track',
+            'bin/sscm-train',
         ],
         install_requires=[
             'argparse',
