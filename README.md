@@ -1,7 +1,9 @@
 sscm
 =======
 
-SSCM is the name for the genome-wide mutation score that Counsyl has been developing.
+SSCM is the name for the genome-wide mutation score developed at Counsyl by
+Sharad Vikram, Matt Rasmussen, Eric Evans, and Imran Haque. See the preprint at
+[http://www.biorxiv.org/content/early/2015/06/26/021527](http://www.biorxiv.org/content/early/2015/06/26/021527).
 
 Getting Started
 ------------
@@ -17,7 +19,8 @@ Then, install the requirements.
 $ pip install -r requirements.txt
 ```
 
-You're now ready to start training models!
+You're now ready to start training models! You can try `example.sh`, which will
+grab the data set used in the paper and build a model.
 
 Input Data and Features
 ------------

@@ -5,10 +5,10 @@
 
 # Download the paper's dataset.
 echo 'Fetching dataset...'
-wget -nc https://zenodo.org/record/19025/files/sscm_data.tar.gz
+wget -nc https://zenodo.org/record/31588/files/sscm_data.tar.xz
 
 # Unzip the dataset.
-[ -d sscm_data/ ] && echo 'Already untarred.' || tar -xzf sscm_data.tar.gz
+[ -d sscm_data/ ] && echo 'Already untarred.' || tar -xJf sscm_data.tar.xz
 
 
 mkdir -p example_data
