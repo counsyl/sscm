@@ -22,6 +22,13 @@ $ pip install -r requirements.txt
 You're now ready to start training models! You can try `example.sh`, which will
 grab the data set used in the paper and build a model.
 
+Choosing a Model
+----------------
+
+The model used in the manuscript is included in
+`models/multiencode-full3/em.model`. If you
+would like to build your own model, see the details below.
+
 Input Data and Features
 ------------
 The input(s) to the training should be *tab-delimited files*, where each row represents a mutation and columns are features for that mutation. If a feature isn't present for the mutation, leave it as 'NA'. Typically, one TSV file will be for clustering (the simulated data, that is), and the other will be the known benign data.
